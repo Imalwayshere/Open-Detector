@@ -1,14 +1,21 @@
-# 🧠 Kill Detector —— 学术论文AI检测器
+# 🧠 Open Detector —— 学术论文AI检测器
 
-BERT 学术文本检测模型 | 免费、本地部署 | Turnitin 替代方案
+<div align="center">
 
-Kill Detector是一个 BERT 二分类模型，用于识别学术论文更接近人类写作还是AI写作风格。它可作为 Turnitin 等高昂商业检测器的开放替代方案，适合学生、个人科研者、本地部署用户。
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.8+-green.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)
+![Hugging Face](https://img.shields.io/badge/HuggingFace-Model-yellow.svg)
+
+**Language / 语言**: [English](README_EN.md) | [中文](README_ZH.md)
+
+</div>
+
+**Open Detector**是一个 BERT 二分类模型，用于识别学术论文更接近**人类写作**还是**AI写作风格**。它可作为 Turnitin 等高昂商业检测器的**开放替代方案**，适合学生、个人科研者、本地部署用户。
 
 ![Demo](images/demo.png)
 
-🌐 访问 [https://followsci.com/ai-detection](https://followsci.com/ai-detection) 可在线使用
-
-**Language / 语言**: [English](README_EN.md) | [中文](README_ZH.md)
+> 🌐 **在线体验**: [https://followsci.com/ai-detection](https://followsci.com/ai-detection)
 
 ---
 
@@ -16,7 +23,7 @@ Kill Detector是一个 BERT 二分类模型，用于识别学术论文更接近�
 
 ### 💡 为什么做这个项目？
 
-Turnitin 等商用学术检测服务价格昂贵，对学生、研究者和自费科研人员不够友好。论文检测应当透明、公平、可解释，而不是商业黑箱。所以我们开放模型，为社区提供透明、低成本方案。
+Turnitin 等商用学术检测服务价格昂贵，对学生、研究者和自费科研人员不够友好。**论文检测应当透明、公平、可解释，而不是商业黑箱**。所以我们开放模型，为社区提供透明、低成本方案。
 
 ### ⚠️ 对 AI 文本检测的哲学立场
 
@@ -54,27 +61,9 @@ AI 写作在词汇选择、句法结构、逻辑连贯性上远超大部分人�
 
 ## 🎯 性能指标
 
-### 测试集结果
+<img src="images/fig1_performance_comparison.png" width="600" alt="性能对比">
 
-| 指标 | 数值 |
-|------|------|
-| **准确率** | 99.57% |
-| **精确率** | 99.23% |
-| **召回率** | 99.94% |
-| **F1分数** | 99.58% |
-| **假阳性率** | 0.82% |
-| **假阴性率** | 0.06% |
-
-![性能对比](images/fig1_performance_comparison.png)
-
-### 混淆矩阵（测试集）
-
-| | 预测：人类 | 预测：AI |
-|---|---|---|
-| **实际：人类** | 89,740 (真阴性) | 740 (假阳性) |
-| **实际：AI** | 60 (假阴性) | 95,390 (真阳性) |
-
-![混淆矩阵](images/fig2_confusion_matrix.png)
+<img src="images/fig2_confusion_matrix.png" width="500" alt="混淆矩阵">
 
 ---
 
@@ -128,6 +117,7 @@ with torch.no_grad():
 | AI 幻觉检测 | 重点区分真实 vs 虚构内容 |
 | 引用真实性 | 防止"假引用"与"模型编造文献" |
 | 学术逻辑一致性 | 结构与推理校验 |
+| 扩展到多语言 | 支持中文、日文等多语言检测 |
 
 ### 最终目标
 
@@ -153,4 +143,8 @@ with torch.no_grad():
 > **我们的目标不是惩罚 AI，而是保护学术真实。**
 
 感谢阅读。欢迎 Star ⭐ 支持开放学术工具生态。
+
+---
+
+> 💡 **提示**：该模型目前仅支持英文，体验中文功能可以访问 [https://www.xyzscience.com/detection](https://www.xyzscience.com/detection)
 

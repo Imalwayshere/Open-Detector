@@ -15,7 +15,7 @@
 
 ![Demo](images/demo.png)
 
-> 🌐 **Try Online**: [https://followsci.com/ai-detection](https://followsci.com/ai-detection)
+> 🌐 **Try Online**: [https://www.xyzscience.com/](https://www.xyzscience.com/)
 
 ---
 
@@ -133,7 +133,7 @@ We have also trained an academic paper humanization rewriting model:
 - Eliminates AI writing traces
 - Avoids misjudgment by style detection
 
-📌 This model can be used for free at [https://followsci.com/ai-rewrite](https://followsci.com/ai-rewrite).
+📌 This model can be used for free at [https://www.xyzscience.com/](https://www.xyzscience.com/).
 
 ---
 

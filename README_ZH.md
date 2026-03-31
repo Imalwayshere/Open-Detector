@@ -15,7 +15,7 @@
 
 ![Demo](images/demo.png)
 
-> 🌐 **在线体验**: [https://followsci.com/ai-detection](https://followsci.com/ai-detection)
+> 🌐 **在线体验**: [https://www.xyzscience.com/](https://www.xyzscience.com/)
 
 ---
 
@@ -133,7 +133,7 @@ with torch.no_grad():
 - 消除 AI 写作痕迹
 - 避免被风格检测误判
 
-📌 该模型可以通过网站 [https://followsci.com/ai-rewrite](https://followsci.com/ai-rewrite) 免费使用。
+📌 该模型可以通过网站 [https://www.xyzscience.com/](https://www.xyzscience.com/) 免费使用。
 
 ---
 
@@ -146,5 +146,5 @@ with torch.no_grad():
 
 ---
 
-> 💡 **提示**：该模型目前仅支持英文，体验中文功能可以访问 [https://www.xyzscience.com/detection](https://www.xyzscience.com/detection)
+> 💡 **提示**：该模型目前仅支持英文，体验中文功能可以访问 [https://www.xyzscience.com/](https://www.xyzscience.com/)
 
